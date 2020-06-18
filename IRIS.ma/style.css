@@ -1,0 +1,370 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: rgb(236, 238, 238);
+}
+
+.container{
+    padding-left: 5%;
+    padding-right: 5%;
+    overflow: hidden;
+    background-color: rgb(243, 243, 243);
+}
+/* header top */
+
+.header-top{
+    background-color: rgb(157, 158, 158);
+    padding: 10px;
+    display: list-item;
+    color: rgb(88, 88, 88);
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.left-menu{
+    float: left;
+ }
+.right-menu{
+   float: right;
+}
+.left-menu a , .right-menu a {
+    text-decoration: none;
+    color: rgb(88, 88, 88);
+    font-weight: bold;
+}
+
+/* navbar */
+.navbar{
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 15px;
+    display: flex;
+    background-color: white;
+}
+.logo{
+    margin-right: 15px;
+}
+
+.rightside{
+    color: grey;
+    font-size: larger;
+}
+.rightside input[type=text]{
+    font-size: large;
+    height: 40px;
+    width:450px;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.btnRchrcher{
+    height: 40px;
+    width: 120px;
+    font-size: 1.2rem;
+    padding: 3px;
+    color: white;
+    background-color: rgb(108, 197, 97);
+    border: none;
+    border-radius: 5px;
+}
+.btnPanier{
+    height: 40px;
+    width: 160px;
+    font-size: large;
+    color: white;
+    background-color: rgb(245, 180, 83);
+    border: none;
+    border-radius: 5px;
+}
+/* tout les hover*/
+.btnRchrcher:hover{
+    background-color: rgb(117, 228, 117);
+}
+.btnPanier:hover{
+    background-color: rgb(247, 156, 19);
+}
+.decouvrir:hover {
+    background-color: rgb(247, 91, 19);
+    font-size: 1.09rem;
+}
+.menu .samsung:hover{
+    background-color: rgb(138, 138, 138);
+}
+.navigation button:hover{
+    color: rgb(53, 63, 199);
+    border: 1px solid darksalmon;
+    background-color: rgb(250, 235, 210);
+    
+}
+.icon:hover{
+    background-color: rgb(248, 225, 186);
+}
+/* menu */
+.menu{
+    background-color: rgb(157, 158, 158);
+    padding: 10px;
+    padding-left: 5%;
+    
+}
+.menu a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-right: 20px;
+    font-weight: bold;
+    
+}
+.menu .samsung{
+    color: white;
+    background-color: blue;
+    border: 1px solid blue ;
+    padding:9px;
+}
+
+/* contenu */
+.contenu{
+   background-color: rgb(250, 235, 210);
+    padding: 10px;
+}
+.images{
+    height: 430px;
+    width: 100%;
+    display: flex;
+    overflow: hidden;
+}
+
+.slider img{
+    width: 700px;
+    height: 353px;
+    margin-right: 10px;
+}
+.slider-img img{
+    width: 300px;
+    height: 170px;
+    margin-bottom: 10px;
+}
+.decouvrir{
+    position: absolute;
+    color: white;
+    width: 90px;
+    height: 20px;
+    padding: 7px;
+    background-color: rgb(185, 6, 6);
+    text-decoration:none;
+}
+.navigation{
+    position: absolute;
+    margin-left: 550px;
+}
+.navigation button{
+    width: 45px;
+    height: 45px;
+    color:lightsalmon;
+    font-size: 1.2rem;
+}
+
+/* store */ 
+.populaire{
+    font-size: 1.4rem;
+    color: rgb(110, 112, 114);
+    margin-bottom: 5px;
+}
+.store{
+   width: 100%;
+}
+
+.pros{
+    margin-top: 10px;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+.pro{
+    margin-right: 10px;
+    margin-bottom: 15px;
+}
+.pro table img{
+ width: 200px;
+ height:200px ;
+ border: 1px solid rgb(168, 163, 163) !important ; 
+}
+.pro table {
+    text-align: center;
+   }
+
+
+   /* footer */
+   .footer{
+       margin-top: 50px;
+       margin-bottom: 50px;
+       background-color: rgb(199, 198, 198);
+       display: flex;
+       
+       padding: 25px;
+   }
+   .footer .pagefacebook{
+       
+       width: 33%;
+       border-right: 1px solid rgb(150, 148, 148);
+   }
+   .footer .info{
+    padding-left: 5px;
+    width: 33%;
+    border-right: 1px solid rgb(150, 148, 148);
+}
+.footer .apropos{
+    padding-left: 15px;
+    width: 33%;
+}
+
+.pagefacebook .fbzone{
+    width: 70%;
+    height: 70%;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+.icon{
+    background-color: rgb(250, 235, 210);
+    border-radius: 50%;
+    padding: 12px;
+    font-size: 2em;
+    text-align: center;
+    margin: 20px;
+}
+.info table tr td:last-child{
+    padding-left: 15px;
+}
+
+
+
+
+/* responsivté*/
+/* store*/
+@media (max-width:2000px){
+
+    .pros{
+        text-align: center;
+        width: 100%;
+        flex-flow: row wrap;
+    }
+    .pros table {
+        flex-flow: row wrap;
+        margin:0px 10px;
+    }
+}
+
+@media (max-width:1000px){
+    .header-top {
+        display: flex;
+        justify-content: center;
+    }
+    .header-top .right-menu{
+        padding-left: 5px;
+        font-size: 14px;
+    }
+    .header-top .left-menu{
+        display: none;
+        
+    }
+    .logo img{
+        width: 140px;
+    }
+    .navbar .rightside{
+        display: inline-table;
+    }
+    .navbar .rightside input{
+        width: 240px;
+        height: 30px;
+        
+        font-size: 12px;
+    }
+    .navbar .rightside button{
+        width: 100px;
+        height: 30px;
+        font-size: 0.9rem;
+    }
+    .navbar .rightside .btnPanier{
+        width: 120px;
+        font-size: 0.8rem;
+    }
+    .navbar .rightside td{
+        font-size: small;
+    }
+    .menu a {
+        font-size: 0.6em;
+        margin-bottom: 5px;
+        margin-right: 5px;
+        padding: 0px;
+    }
+    .images{
+        height: 400px;
+        width: 100%;
+    }
+
+    .slider img{
+        width: 600px;
+        height: 300px;
+        margin-right: 10px;
+    }
+    .slider-img img{
+        display: none;
+    }
+    .decouvrir{
+        position: absolute;
+        color: white;
+        padding: 3px;
+        background-color: rgb(185, 6, 6);
+        text-decoration:none;
+    }
+
+    .navigation{
+        position: absolute;
+        margin-left: 470px;
+    }
+    .footer{
+        font-size:0.8rem ;
+    }
+    .slider-img img{
+            display: none;
+    }
+}
+
+@media (min-width:900px ) and (max-width:1000px){
+    .menu a {
+        font-size: 0.70rem;
+        margin-bottom: 5px;
+        margin-right: 10px;
+    }
+}
+
+
+@media (min-width:1000px ) and (max-width:1065px){
+    
+    .menu .deal{
+        display: none;
+    }
+    .navbar .rightside input{
+        width: 400px;
+    }
+    .slider-img img{
+        width: 100%;
+    }
+
+}
+@media (min-width:600px){
+    .icon{
+        font-size: 1rem;
+        padding: 15px;
+        
+    }
+    .footer table {
+        border-spacing: 0px 0.5rem;
+    }
+    .footer table tr td i{
+        padding: 2px;
+        font-size: 2em;
+    }
+    
+}
